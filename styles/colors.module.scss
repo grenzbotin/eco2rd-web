@@ -1,0 +1,44 @@
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+$green-dark: #283618;
+$green-light: #606C38;
+$cream: #FEFAE0;
+$sand-light: #DDA15E;
+$sand-dark: #BC6C25;
+
+// Update Bulma's global variables
+$family-serif: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+$family-sans-serif: "MS Sans Serif", "Geneva", sans-serif;
+$family-primary: $family-sans-serif;
+$family-secondary: $family-serif;
+
+$grey-dark: #202124;
+$grey-light: $beige-light;
+$primary: $green-light;
+$link: $sand-light;
+$background: $grey-dark;
+$text: $beige-light;
+$tabs-link-hover-color: $sand-light;
+$tabs-link-focus-color: $sand-light;
+$button-hover-color: $sand-light;
+$button-focus-color: $sand-light;
+$avatar-background: #363636;
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+$input-background-color: $beige-lighter;
+$input-border-color: transparent;
+$input-shadow: none;
+
+$tooltip-background: #161616F2;
+$tooltip-border: #0000001A;
+
+$chip-hover-background: #00000033;
+
+$overlay-background: #161616F2;
+$overlay-border: #0000001A;

@@ -1,0 +1,15 @@
+@import './colors.module.scss';
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background: $tooltip-background;
+  border-top: 2px solid $overlay-border;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.7rem;
+  img {
+    margin-right: 0.5rem;
+  }
+}
