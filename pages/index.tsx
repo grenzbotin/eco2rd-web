@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import { Columns, Container } from "react-bulma-components";
-import Link from "next/link";
 
 import Gallery from "../components/Gallery";
 
@@ -78,7 +77,7 @@ const Home: NextPage = () => {
               <p>
                 Thus, this page will be developed in the meantime to provide all
                 necessary and interesting information; starting with the
-                deserved <Link href="/credits">Credits</Link>.
+                deserved Credits.
               </p>
             </Columns.Column>
           </Columns>

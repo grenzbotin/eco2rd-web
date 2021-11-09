@@ -26,6 +26,7 @@ function Gallery({ images }: { images: ImageProps[] }): React.ReactElement {
       </div>
       <div>
         <Button
+          aria-label="Go backward"
           disabled={page - 1 < 0}
           onClick={() => setPage(page - 1)}
           size="small"
@@ -33,6 +34,7 @@ function Gallery({ images }: { images: ImageProps[] }): React.ReactElement {
           <span className="icon-arrow-circle-o-left" />
         </Button>
         <Button
+          aria-label="Go forward"
           disabled={page + 1 > images.length - 1}
           onClick={() => setPage(page + 1)}
           size="small"

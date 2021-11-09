@@ -22,7 +22,7 @@ function Navbar(): React.ReactElement {
     <BulmaNavbar fixed="top" active={burgerOpen} color="primary">
       <BulmaNavbar.Brand>
         <BulmaNavbar.Item href="/" className="horizontalPadding">
-          <img src="./logo_word_mark.svg" alt="eco₂rd Logo" />
+          <img src="./logo_word_mark.svg" alt="eco₂rd word image mark" />
         </BulmaNavbar.Item>
         <BulmaNavbar.Burger onClick={() => setBurgerOpen(!burgerOpen)} />
       </BulmaNavbar.Brand>
