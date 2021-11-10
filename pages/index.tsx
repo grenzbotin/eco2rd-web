@@ -3,6 +3,7 @@ import { NextSeo } from "next-seo";
 import { Columns, Container } from "react-bulma-components";
 
 import Gallery from "../components/Gallery";
+import { START_PAGE_IMAGES } from "../config/images";
 
 import styles from "../styles/Home.module.scss";
 import layout from "../styles/Layout.module.scss";
@@ -26,46 +27,7 @@ const Home: NextPage = () => {
               </p>
             </Columns.Column>
             <Columns.Column>
-              <Gallery
-                images={[
-                  {
-                    alt: "main view of the extension",
-                    src: "./screen1.webp",
-                    width: "360",
-                    height: "270",
-                  },
-                  {
-                    alt: "main view of the extension",
-                    src: "./screen2.webp",
-                    width: "360",
-                    height: "270",
-                  },
-                  {
-                    alt: "main view of the extension",
-                    src: "./screen3.webp",
-                    width: "360",
-                    height: "270",
-                  },
-                  {
-                    alt: "main view of the extension",
-                    src: "./screen4.webp",
-                    width: "360",
-                    height: "270",
-                  },
-                  {
-                    alt: "main view of the extension",
-                    src: "./screen5.webp",
-                    width: "360",
-                    height: "270",
-                  },
-                  {
-                    alt: "main view of the extension",
-                    src: "./screen6.webp",
-                    width: "360",
-                    height: "270",
-                  },
-                ]}
-              />
+              <Gallery images={START_PAGE_IMAGES} />
             </Columns.Column>
             <Columns.Column>
               <h2>Extension status</h2>
@@ -73,11 +35,6 @@ const Home: NextPage = () => {
                 The browser extension is close to be published on the chrome
                 extension store and is expected to be available in a couple of
                 days.
-              </p>
-              <p>
-                Thus, this page will be developed in the meantime to provide all
-                necessary and interesting information; starting with the
-                deserved Credits.
               </p>
             </Columns.Column>
           </Columns>

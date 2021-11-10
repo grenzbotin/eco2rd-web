@@ -106,6 +106,7 @@ a {
 
 p {
   margin: 0.5rem 0;
+  font-size: 0.9rem;
 }
 
 .navbar-menu {
@@ -122,7 +123,22 @@ p {
   }
 }
 
+// Modal
+.modal-card-head {
+  border-bottom: 1px solid $green-dark;
+}
 
+.modal-card-title {
+  font-size: 1rem;
+  color: $beige-light;
+}
+
+.modal-card-body {
+  background: $overlay-background;  
+}
+
+
+// Headlines 
 h1 {
   font-family: $family-secondary;
   color: $sand-light;

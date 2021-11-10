@@ -1,14 +1,36 @@
 @import './colors.module.scss';
 
-.galleryWrapper {
+.modalTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  * > .modalButton {
+    height: 1rem;
+    margin-left: 0.5rem;
+  }
+  span > :last-child {
+    margin-right: 1rem;
+  }
+}
+
+.galleryWrapper, .galleryModal {
   display: flex;
   flex-direction: column;
+  figure {
+    text-align: center;
+    > figcaption {
+      font-size: 0.7rem;
+    }
+    .image {
+      border: 2px solid $sand-light;
+      &.highlight {
+        cursor: zoom-in;
+      }
+    }
+  }
   > div {
     display: flex;
     justify-content: center;
-    .image {
-      border: 2px solid $sand-light !important;
-    }
     &:last-child {
       margin-top: 1rem;
       >button {
