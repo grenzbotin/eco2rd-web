@@ -21,7 +21,9 @@
     > figcaption {
       font-size: 0.7rem;
     }
-    .image {
+    img {
+      width: 100%;
+      height: auto;
       border: 2px solid $sand-light;
       &.highlight {
         cursor: zoom-in;

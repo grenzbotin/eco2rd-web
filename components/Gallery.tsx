@@ -61,10 +61,8 @@ function Gallery({ images }: { images: ImageProps[] }): React.ReactElement {
               <img
                 alt={images[page].alt}
                 src={images[page].src}
-                width="100%"
-                height="auto"
-                className={styles.image}
-                loading="lazy"
+                width={images[page].width}
+                height={images[page].height}
               />
               <figcaption>{images[page].caption}</figcaption>
             </figure>
@@ -77,8 +75,7 @@ function Gallery({ images }: { images: ImageProps[] }): React.ReactElement {
           src={images[page].src}
           width={images[page].width}
           height={images[page].height}
-          className={`${styles.image} ${styles.highlight}`}
-          loading="lazy"
+          className={styles.highlight}
         />
         <figcaption>{images[page].caption}</figcaption>
       </figure>
