@@ -30,6 +30,7 @@ const Home: NextPage = () => {
                 color="primary"
                 renderAs="a"
                 target="_blank"
+                rel="noreferrer"
                 href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
               >
                 Download from chrome web store
