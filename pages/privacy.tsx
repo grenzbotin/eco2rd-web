@@ -26,7 +26,15 @@ const Privacy: NextPage = () => {
           </p>
           <p>
             The source code of the extension is available in open access, to
-            ensure transparency and for any other purpose: Link-to-follow.
+            ensure transparency and for any other purpose:{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/grenzbotin/eco2rd"
+            >
+              https://github.com/grenzbotin/eco2rd
+            </a>
+            .
           </p>
           <p>
             eco₂rd got concepted, developed and designed by{" "}

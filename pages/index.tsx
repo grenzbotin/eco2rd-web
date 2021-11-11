@@ -35,6 +35,15 @@ const Home: NextPage = () => {
               >
                 Download from chrome web store
               </Button>
+              <Button
+                color="secondary"
+                renderAs="a"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/grenzbotin/eco2rd"
+              >
+                Github
+              </Button>
             </Columns.Column>
             <Columns.Column>
               <Gallery images={START_PAGE_IMAGES} />
