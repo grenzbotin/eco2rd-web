@@ -3,5 +3,16 @@
 }
 
 .welcome {
-  align-self: center;
+  > a {
+    margin-top: 1rem;
+  }
+}
+
+.news {
+  > div > article {
+    margin-bottom: 1.2rem;
+    > time {
+      font-size: 0.8rem;
+    }
+  }
 }

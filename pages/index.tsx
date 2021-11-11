@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
-import { Columns, Container } from "react-bulma-components";
+import { Button, Columns, Container } from "react-bulma-components";
 
 import Gallery from "../components/Gallery";
+import { EXTENSION_STATUS } from "../config/extension";
 import { START_PAGE_IMAGES } from "../config/images";
 
 import styles from "../styles/Home.module.scss";
@@ -18,24 +19,39 @@ const Home: NextPage = () => {
       <main className={layout.main}>
         <Container className={styles.container}>
           <Columns>
-            <Columns.Column>
+            <Columns.Column className={styles.welcome}>
               <h1>Hello!</h1>
               <p>
                 This is <b>eco₂rd</b>, a browser extension that aims to help you
                 measuring and understanding your digital, browser traffic based
                 footprint.
               </p>
+              <Button
+                color="primary"
+                renderAs="a"
+                target="_blank"
+                href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
+              >
+                Download from chrome web store
+              </Button>
             </Columns.Column>
             <Columns.Column>
               <Gallery images={START_PAGE_IMAGES} />
             </Columns.Column>
             <Columns.Column>
-              <h2>Extension status</h2>
-              <p>
-                The browser extension is close to be published on the chrome
-                extension store and is expected to be available in a couple of
-                days.
-              </p>
+              <section className={styles.news}>
+                <h2>Extension status</h2>
+                <div>
+                  {EXTENSION_STATUS.map((item) => (
+                    <article key={item.id}>
+                      <time dateTime={item.date.toLocaleDateString()}>
+                        {item.date.toLocaleDateString()}
+                      </time>
+                      <p>{item.content}</p>
+                    </article>
+                  ))}
+                </div>
+              </section>
             </Columns.Column>
           </Columns>
         </Container>

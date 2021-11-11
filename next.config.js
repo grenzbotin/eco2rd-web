@@ -7,6 +7,13 @@ const nextConfig = {
 
 const optimizedImages = require("next-optimized-images");
 const withPlugins = require("next-compose-plugins");
+const { createSecureHeaders } = require("next-secure-headers");
+
+const withSecurityHeaders = {
+  async headers() {
+    return [{ source: "/(.*)", headers: createSecureHeaders() }];
+  },
+};
 
 module.exports = withPlugins(
   [
@@ -18,6 +25,7 @@ module.exports = withPlugins(
         optimizeImagesInDev: true,
       },
     ],
+    withSecurityHeaders,
   ],
   nextConfig
 );
