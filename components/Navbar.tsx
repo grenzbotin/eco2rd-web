@@ -19,7 +19,7 @@ function Navbar(): React.ReactElement {
   const [burgerOpen, setBurgerOpen] = useState<boolean>(false);
 
   return (
-    <BulmaNavbar fixed="top" active={burgerOpen} color="primary">
+    <BulmaNavbar role="none" fixed="top" active={burgerOpen} color="primary">
       <BulmaNavbar.Brand>
         <BulmaNavbar.Item href="/" className="horizontalPadding">
           <img

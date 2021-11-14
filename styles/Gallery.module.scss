@@ -3,9 +3,9 @@
 .modalTitleWrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   * > .modalButton {
-    height: 1rem;
     margin-left: 0.5rem;
   }
   span > :last-child {

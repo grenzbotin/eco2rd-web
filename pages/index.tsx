@@ -49,19 +49,20 @@ const Home: NextPage = () => {
               <Gallery images={START_PAGE_IMAGES} />
             </Columns.Column>
             <Columns.Column>
-              <section className={styles.news}>
+              <article className={styles.news}>
                 <h2>Extension status</h2>
                 <div>
                   {EXTENSION_STATUS.map((item) => (
                     <article key={item.id}>
-                      <time dateTime={item.date.toLocaleDateString()}>
+                      <h3>{item.title}</h3>
+                      <time dateTime={item.date.toISOString()}>
                         {item.date.toLocaleDateString()}
                       </time>
                       <p>{item.content}</p>
                     </article>
                   ))}
                 </div>
-              </section>
+              </article>
             </Columns.Column>
           </Columns>
         </Container>
