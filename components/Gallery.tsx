@@ -1,24 +1,17 @@
 import { useState } from "react";
 import { Button, Modal } from "react-bulma-components";
+import { MediaProps } from "../config/media";
 
 import styles from "../styles/Gallery.module.scss";
 
-interface ImageProps {
-  alt: string;
-  src: string;
-  width: string;
-  height: string;
-  caption: string;
-}
-
-function Gallery({ images }: { images: ImageProps[] }): React.ReactElement {
+function Gallery({ media }: { media: MediaProps[] }): React.ReactElement {
   const [page, setPage] = useState<number>(0);
   const [modalOpen, setModalOpen] = useState<boolean>(false);
 
   const handlePreviousClick = () =>
-    setPage(page === 0 ? images.length - 1 : page - 1);
+    setPage(page === 0 ? media.length - 1 : page - 1);
   const handleNextClick = () =>
-    setPage(page === images.length - 1 ? 0 : page + 1);
+    setPage(page === media.length - 1 ? 0 : page + 1);
 
   return (
     <div className={styles.galleryWrapper}>
@@ -31,7 +24,7 @@ function Gallery({ images }: { images: ImageProps[] }): React.ReactElement {
           <Modal.Card.Header showClose>
             <Modal.Card.Title>
               <span className={styles.modalTitleWrapper}>
-                Image {page + 1} of {images.length}
+                {page + 1} of {media.length}
                 <span>
                   <Button
                     aria-label="Go to previous"
@@ -54,30 +47,42 @@ function Gallery({ images }: { images: ImageProps[] }): React.ReactElement {
             </Modal.Card.Title>
           </Modal.Card.Header>
           <Modal.Card.Body className={styles.galleryModal}>
-            <figure
-              aria-label="Show zoomed version of picture"
-              onClick={() => setModalOpen(true)}
-            >
-              <img
-                alt={images[page].alt}
-                src={images[page].src}
-                width={images[page].width}
-                height={images[page].height}
-              />
-              <figcaption>{images[page].caption}</figcaption>
+            <figure onClick={() => setModalOpen(true)}>
+              {media[page].type === "video" ? (
+                <video controls>
+                  <source src={media[page].src} type="video/mp4" />
+                </video>
+              ) : (
+                <img
+                  alt={media[page].alt}
+                  src={media[page].src}
+                  width={media[page].width}
+                  height={media[page].height}
+                />
+              )}
+              <figcaption>{media[page].caption}</figcaption>
             </figure>
           </Modal.Card.Body>
         </Modal.Card>
       </Modal>
-      <figure onClick={() => setModalOpen(true)}>
-        <img
-          alt={images[page].alt}
-          src={images[page].src}
-          width={images[page].width}
-          height={images[page].height}
-          className={styles.highlight}
-        />
-        <figcaption>{images[page].caption}</figcaption>
+      <figure
+        aria-label="Show zoomed version"
+        onClick={() => setModalOpen(true)}
+      >
+        {media[page].type === "video" ? (
+          <video className={styles.highlight}>
+            <source src={media[page].src} type="video/mp4" />
+          </video>
+        ) : (
+          <img
+            alt={media[page].alt}
+            src={media[page].src}
+            width={media[page].width}
+            height={media[page].height}
+            className={styles.highlight}
+          />
+        )}
+        <figcaption>{media[page].caption}</figcaption>
       </figure>
       <div>
         <Button

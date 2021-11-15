@@ -1,5 +1,11 @@
 const EXTENSION_STATUS = [
   {
+    id: 3,
+    date: new Date(2021, 10, 15),
+    title: "🌱 v0.1.1",
+    content: "v0.1.1: Only process requests with content-length > 0",
+  },
+  {
     id: 2,
     date: new Date(2021, 10, 11),
     title: "🚀 Landed",
@@ -14,3 +20,4 @@ const EXTENSION_STATUS = [
 ];
 
 export { EXTENSION_STATUS };
+

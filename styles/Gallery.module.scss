@@ -29,6 +29,12 @@
         cursor: zoom-in;
       }
     }
+    video {
+      border: 2px solid $sand-light;
+      &.highlight {
+        cursor: zoom-in;
+      }
+    }
   }
   > div {
     display: flex;

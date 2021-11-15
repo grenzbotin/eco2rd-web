@@ -1,14 +1,31 @@
-const START_PAGE_IMAGES = [
+export interface MediaProps {
+  type?: string;
+  alt: string;
+  src: string;
+  width: string;
+  height: string;
+  caption: string;
+}
+
+const START_PAGE_MEDIA = [
+  {
+    type: "video",
+    alt: "Demo: walk through",
+    src: "./media/video/demo.mp4",
+    width: "360",
+    height: "270",
+    caption: "Demo video: walk through eco₂rd",
+  },
   {
     alt: "main view of the extension",
-    src: "./screen1.webp",
+    src: "./media/images/screen1.webp",
     width: "360",
     height: "270",
     caption: "Overview of today's consumption data",
   },
   {
     alt: "detail view of a website in the extension",
-    src: "./screen2.webp",
+    src: "./media/images/screen2.webp",
     width: "360",
     height: "270",
     caption:
@@ -16,7 +33,7 @@ const START_PAGE_IMAGES = [
   },
   {
     alt: "detail on download chip click",
-    src: "./screen3.webp",
+    src: "./media/images/screen3.webp",
     width: "360",
     height: "270",
     caption:
@@ -24,7 +41,7 @@ const START_PAGE_IMAGES = [
   },
   {
     alt: "list view data centers",
-    src: "./screen4.webp",
+    src: "./media/images/screen4.webp",
     width: "360",
     height: "270",
     caption:
@@ -32,14 +49,15 @@ const START_PAGE_IMAGES = [
   },
   {
     alt: "list view visited websites",
-    src: "./screen5.webp",
+    src: "./media/images/screen5.webp",
     width: "360",
     height: "270",
     caption: "List view of visited websites",
   },
   {
+    type: 'image',
     alt: "settings pop up",
-    src: "./screen6.webp",
+    src: "./media/images/screen6.webp",
     width: "360",
     height: "270",
     caption:
@@ -47,4 +65,4 @@ const START_PAGE_IMAGES = [
   },
 ];
 
-export { START_PAGE_IMAGES };
+export { START_PAGE_MEDIA };

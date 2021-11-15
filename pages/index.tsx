@@ -4,7 +4,7 @@ import { Button, Columns, Container } from "react-bulma-components";
 
 import Gallery from "../components/Gallery";
 import { EXTENSION_STATUS } from "../config/extension";
-import { START_PAGE_IMAGES } from "../config/images";
+import { START_PAGE_MEDIA } from "../config/media";
 
 import styles from "../styles/Home.module.scss";
 import layout from "../styles/Layout.module.scss";
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       />
       <main className={layout.main}>
         <Container className={styles.container}>
-          <Columns>
+          <Columns desktop={{ gap: 6 }}>
             <Columns.Column className={styles.welcome}>
               <h1>Hello!</h1>
               <p>
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
               </Button>
             </Columns.Column>
             <Columns.Column>
-              <Gallery images={START_PAGE_IMAGES} />
+              <Gallery media={START_PAGE_MEDIA} />
             </Columns.Column>
             <Columns.Column>
               <article className={styles.news}>
