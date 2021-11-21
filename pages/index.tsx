@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <main className={layout.main}>
         <Container className={styles.container}>
           <Columns desktop={{ gap: 6 }}>
-            <Columns.Column className={styles.welcome}>
+            <Columns.Column className={styles.column}>
               <h1>Hello!</h1>
               <p>
                 This is <b>eco₂rd</b>, a browser extension that aims to help you
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                 Github
               </Button>
             </Columns.Column>
-            <Columns.Column>
+            <Columns.Column className={styles.column}>
               <Gallery media={START_PAGE_MEDIA} />
             </Columns.Column>
             <Columns.Column>

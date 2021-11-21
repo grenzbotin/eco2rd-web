@@ -3,13 +3,13 @@ const EXTENSION_STATUS = [
     id: 3,
     date: new Date(2021, 10, 15),
     title: "🌱 v0.1.1",
-    content: "v0.1.1: Only process requests with content-length > 0",
+    content: "v0.1.1: Only process requests with content-length.",
   },
   {
     id: 2,
     date: new Date(2021, 10, 11),
     title: "🚀 Landed",
-    content: "The browser extension got published in version v0.1.0 in the chrome web store",
+    content: "The browser extension got published in version v0.1.0 in the chrome web store.",
   },
   {
     id: 1,

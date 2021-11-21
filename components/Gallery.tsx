@@ -49,7 +49,7 @@ function Gallery({ media }: { media: MediaProps[] }): React.ReactElement {
           <Modal.Card.Body className={styles.galleryModal}>
             <figure onClick={() => setModalOpen(true)}>
               {media[page].type === "video" ? (
-                <video controls>
+                <video controls autoPlay>
                   <source src={media[page].src} type="video/mp4" />
                 </video>
               ) : (
@@ -70,7 +70,10 @@ function Gallery({ media }: { media: MediaProps[] }): React.ReactElement {
         onClick={() => setModalOpen(true)}
       >
         {media[page].type === "video" ? (
-          <video className={styles.highlight}>
+          <video
+            className={styles.highlight}
+            poster="/media/images/demo_poster.webp"
+          >
             <source src={media[page].src} type="video/mp4" />
           </video>
         ) : (
