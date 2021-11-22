@@ -1,0 +1,9 @@
+.news {
+  padding-right: 2rem;
+  > div > article {
+    margin-bottom: 1.2rem;
+    > time {
+      font-size: 0.8rem;
+    }
+  }
+}

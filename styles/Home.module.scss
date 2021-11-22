@@ -3,17 +3,11 @@
 }
 
 .column {
-  align-self: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 52px);
   > a {
     margin: 1rem 0.5rem 0 0;
-  }
-}
-
-.news {
-  > div > article {
-    margin-bottom: 1.2rem;
-    > time {
-      font-size: 0.8rem;
-    }
   }
 }

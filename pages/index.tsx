@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import { Button, Columns, Container } from "react-bulma-components";
+import ExtensionNews from "../components/ExtensionNews";
 
 import Gallery from "../components/Gallery";
-import { EXTENSION_STATUS } from "../config/extension";
 import { START_PAGE_MEDIA } from "../config/media";
 
 import styles from "../styles/Home.module.scss";
@@ -19,50 +19,43 @@ const Home: NextPage = () => {
       <main className={layout.main}>
         <Container className={styles.container}>
           <Columns desktop={{ gap: 6 }}>
-            <Columns.Column className={styles.column}>
+            <Columns.Column size="half" className={styles.column}>
               <h1>Hello!</h1>
               <p>
                 This is <b>eco₂rd</b>, a browser extension that aims to help you
                 measuring and understanding your digital, browser traffic based
                 footprint.
               </p>
-              <Button
-                color="primary"
-                renderAs="a"
-                target="_blank"
-                rel="noreferrer"
-                href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
-              >
-                Download from chrome web store
-              </Button>
-              <Button
-                color="secondary"
-                renderAs="a"
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/grenzbotin/eco2rd"
-              >
-                Github
-              </Button>
+              <br />
+              <div>
+                <Button
+                  color="primary"
+                  renderAs="a"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
+                >
+                  Download from chrome web store
+                </Button>
+              </div>
+              <br />
+              <div>
+                <Button
+                  color="secondary"
+                  renderAs="a"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/grenzbotin/eco2rd"
+                >
+                  Github
+                </Button>
+              </div>
             </Columns.Column>
-            <Columns.Column className={styles.column}>
+            <Columns.Column size="half" className={styles.column}>
               <Gallery media={START_PAGE_MEDIA} />
             </Columns.Column>
             <Columns.Column>
-              <article className={styles.news}>
-                <h2>Extension status</h2>
-                <div>
-                  {EXTENSION_STATUS.map((item) => (
-                    <article key={item.id}>
-                      <h3>{item.title}</h3>
-                      <time dateTime={item.date.toISOString()}>
-                        {item.date.toLocaleDateString()}
-                      </time>
-                      <p>{item.content}</p>
-                    </article>
-                  ))}
-                </div>
-              </article>
+              <ExtensionNews />
             </Columns.Column>
           </Columns>
         </Container>

@@ -16,14 +16,16 @@
 .galleryWrapper, .galleryModal {
   display: flex;
   flex-direction: column;
+  height: calc(50vh + 70px);
   figure {
     text-align: center;
+    height: 50vh;
     > figcaption {
       font-size: 0.7rem;
     }
     img {
-      width: 100%;
-      height: auto;
+      width: auto;
+      height: 100%;
       border: 2px solid $sand-light;
       &.highlight {
         cursor: zoom-in;
@@ -31,6 +33,8 @@
     }
     video {
       border: 2px solid $sand-light;
+      width: auto;
+      height: 100%;
       &.highlight {
         cursor: zoom-in;
       }
@@ -40,7 +44,7 @@
     display: flex;
     justify-content: center;
     &:last-child {
-      margin-top: 1rem;
+      margin-top: 2rem;
       >button {
         margin: 0 1rem;
       }
