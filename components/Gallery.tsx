@@ -69,36 +69,24 @@ function Gallery({ media }: { media: MediaProps[] }): React.ReactElement {
         aria-label="Show zoomed version"
         onClick={() => setModalOpen(true)}
       >
-        {media[page].type === "video" ? (
+        {media[0].type === "video" ? (
           <video
             className={styles.highlight}
             poster="/media/images/demo_poster.webp"
           >
-            <source src={media[page].src} type="video/mp4" />
+            <source src={media[0].src} type="video/mp4" />
           </video>
         ) : (
           <img
-            alt={media[page].alt}
-            src={media[page].src}
-            width={media[page].width}
-            height={media[page].height}
+            alt={media[0].alt}
+            src={media[0].src}
+            width={media[0].width}
+            height={media[0].height}
             className={styles.highlight}
           />
         )}
-        <figcaption>{media[page].caption}</figcaption>
+        <figcaption>{media[0].caption}</figcaption>
       </figure>
-      <div>
-        <Button
-          aria-label="Go to previous"
-          onClick={handlePreviousClick}
-          size="small"
-        >
-          <span className="icon-arrow-circle-o-left" />
-        </Button>
-        <Button aria-label="Go to next" onClick={handleNextClick} size="small">
-          <span className="icon-arrow-circle-o-right" />
-        </Button>
-      </div>
     </div>
   );
 }

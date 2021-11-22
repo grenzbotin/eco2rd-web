@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       />
       <main className={layout.main}>
         <Container className={styles.container}>
-          <Columns desktop={{ gap: 6 }}>
+          <Columns desktop={{ gap: 6 }} vCentered>
             <Columns.Column size="half" className={styles.column}>
               <h1>Hello!</h1>
               <p>
@@ -26,32 +26,27 @@ const Home: NextPage = () => {
                 measuring and understanding your digital, browser traffic based
                 footprint.
               </p>
-              <br />
-              <div>
-                <Button
-                  color="primary"
-                  renderAs="a"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
-                >
-                  Download from chrome web store
-                </Button>
-              </div>
-              <br />
-              <div>
-                <Button
-                  color="secondary"
-                  renderAs="a"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/grenzbotin/eco2rd"
-                >
-                  Github
-                </Button>
-              </div>
+              <Button
+                color="primary"
+                renderAs="a"
+                target="_blank"
+                rel="noreferrer"
+                href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
+              >
+                Download from chrome web store
+              </Button>
+              <Button
+                color="secondary"
+                renderAs="a"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/grenzbotin/eco2rd"
+              >
+                Github
+              </Button>
             </Columns.Column>
-            <Columns.Column size="half" className={styles.column}>
+            <Columns.Column size="half">
+              <h2>Demo</h2>
               <Gallery media={START_PAGE_MEDIA} />
             </Columns.Column>
             <Columns.Column>

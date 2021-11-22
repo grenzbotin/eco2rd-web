@@ -16,10 +16,9 @@
 .galleryWrapper, .galleryModal {
   display: flex;
   flex-direction: column;
-  height: calc(50vh + 70px);
   figure {
+    max-height: 300px;
     text-align: center;
-    height: 50vh;
     > figcaption {
       font-size: 0.7rem;
     }

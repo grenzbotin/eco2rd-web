@@ -3,10 +3,6 @@
 }
 
 .column {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 52px);
   > a {
     margin: 1rem 0.5rem 0 0;
   }
