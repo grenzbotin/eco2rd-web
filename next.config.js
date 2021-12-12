@@ -11,7 +11,7 @@ const { createSecureHeaders } = require("next-secure-headers");
 
 const withSecurityHeaders = {
   async headers() {
-    return [{ source: "/:path*", headers: createSecureHeaders() }];
+    return [{ source: "/(.*)", headers: createSecureHeaders() }];
   },
 };
 
