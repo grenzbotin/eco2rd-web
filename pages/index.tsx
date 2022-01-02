@@ -28,26 +28,25 @@ const Home: NextPage = () => {
                 you measuring and understanding your digital, browser traffic
                 based CO₂ footprint while you are surfing through the internet.
               </p>
-              <div>
-                <Button
-                  color="primary"
-                  renderAs="a"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
-                >
-                  Download from chrome web store
-                </Button>
-                <Button
-                  color="secondary"
-                  renderAs="a"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/grenzbotin/eco2rd"
-                >
-                  Github
-                </Button>
-              </div>
+
+              <Button
+                color="primary"
+                renderAs="a"
+                target="_blank"
+                rel="noreferrer"
+                href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
+              >
+                Download from chrome web store
+              </Button>
+              <Button
+                color="secondary"
+                renderAs="a"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/grenzbotin/eco2rd"
+              >
+                Github
+              </Button>
             </Columns.Column>
             <Columns.Column
               size="half"
