@@ -6,7 +6,7 @@ function Footer(): React.ReactElement {
     <footer className={styles.footer}>
       <Link href="/privacy">Privacy</Link>
       <img src="./logo.svg" alt="eco₂rd Logo" width={25} height={25} /> ©{" "}
-      {new Date().getFullYear()}, eco₂rd
+      {new Date().getFullYear()} eco₂rd
     </footer>
   );
 }

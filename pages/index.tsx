@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import { Button, Columns, Container } from "react-bulma-components";
-import ExtensionNews from "../components/ExtensionNews";
 
 import Gallery from "../components/Gallery";
 import { START_PAGE_MEDIA } from "../config/media";
@@ -18,39 +17,43 @@ const Home: NextPage = () => {
       />
       <main className={layout.main}>
         <Container className={styles.container}>
-          <Columns desktop={{ gap: 6 }} vCentered>
-            <Columns.Column size="half" className={styles.column}>
-              <h1>Hello!</h1>
+          <Columns className="is-8">
+            <Columns.Column
+              size="half"
+              className={[styles.column, styles.hero].join(" ")}
+            >
+              <h1>eco₂rd web browser extension</h1>
               <p>
-                This is <b>eco₂rd</b>, a browser extension that aims to help you
-                measuring and understanding your digital, browser traffic based
-                footprint.
+                This is <b>eco₂rd</b>, a browser extension for that aims to help
+                you measuring and understanding your digital, browser traffic
+                based CO₂ footprint while you are surfing through the internet.
               </p>
-              <Button
-                color="primary"
-                renderAs="a"
-                target="_blank"
-                rel="noreferrer"
-                href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
-              >
-                Download from chrome web store
-              </Button>
-              <Button
-                color="secondary"
-                renderAs="a"
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/grenzbotin/eco2rd"
-              >
-                Github
-              </Button>
+              <div>
+                <Button
+                  color="primary"
+                  renderAs="a"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
+                >
+                  Download from chrome web store
+                </Button>
+                <Button
+                  color="secondary"
+                  renderAs="a"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/grenzbotin/eco2rd"
+                >
+                  Github
+                </Button>
+              </div>
             </Columns.Column>
-            <Columns.Column size="half">
-              <h2>Demo</h2>
+            <Columns.Column
+              size="half"
+              className={[styles.column, styles.hero].join(" ")}
+            >
               <Gallery media={START_PAGE_MEDIA} />
-            </Columns.Column>
-            <Columns.Column>
-              <ExtensionNews />
             </Columns.Column>
           </Columns>
         </Container>

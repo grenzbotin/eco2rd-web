@@ -33,6 +33,9 @@ function Navbar(): React.ReactElement {
       </BulmaNavbar.Brand>
       <BulmaNavbar.Menu>
         <BulmaNavbar.Container>
+          <Link href="/releases" passHref={true}>
+            <CustomItem active={pathname === "/releases"}>Releases</CustomItem>
+          </Link>
           <Link href="/credits" passHref={true}>
             <CustomItem active={pathname === "/credits"}>Credits</CustomItem>
           </Link>

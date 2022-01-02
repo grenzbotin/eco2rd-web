@@ -1,8 +1,33 @@
+@import "~bulma/sass/utilities/mixins";
+@import "./colors.module.scss";
+
 .container {
   margin: 1.5rem 0;
+  @include from(769px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero {
+  @include from(769px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 72px);
+  }
+}
+
+.alternate {
+  background: $tooltip-background;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .column {
+  @include until(768px) {
+    margin-bottom: 2rem;
+  }
+
   > a {
     margin: 1rem 0.5rem 0 0;
   }

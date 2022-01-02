@@ -1,4 +1,4 @@
-@import './colors.module.scss';
+@import "./colors.module.scss";
 
 .modalTitleWrapper {
   display: flex;
@@ -13,18 +13,22 @@
   }
 }
 
-.galleryWrapper, .galleryModal {
+.galleryWrapper,
+.galleryModal {
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
+  padding-bottom: 2rem;
   figure {
-    max-height: 300px;
     text-align: center;
     > figcaption {
       font-size: 0.7rem;
     }
     img {
       width: auto;
-      max-height: 300px;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
       border: 2px solid $sand-light;
       &.highlight {
         cursor: zoom-in;
@@ -33,7 +37,9 @@
     video {
       border: 2px solid $sand-light;
       width: auto;
-      max-height: 300px;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
       &.highlight {
         cursor: zoom-in;
       }
@@ -44,7 +50,7 @@
     justify-content: center;
     &:last-child {
       margin-top: 2rem;
-      >button {
+      > button {
         margin: 0 1rem;
       }
     }

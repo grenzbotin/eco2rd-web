@@ -1,8 +1,9 @@
-@import './theme.scss';
+@import "./theme.scss";
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -106,7 +107,7 @@ a {
 
 p {
   margin: 0.5rem 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .navbar-menu {
@@ -135,11 +136,10 @@ p {
 }
 
 .modal-card-body {
-  background: $overlay-background;  
+  background: $overlay-background;
 }
 
-
-// Headlines 
+// Headlines
 h1 {
   font-family: $family-secondary;
   color: $sand-light;
