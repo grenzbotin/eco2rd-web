@@ -24,25 +24,29 @@ function Gallery({ media }: { media: MediaProps[] }): React.ReactElement {
           <Modal.Card.Header showClose>
             <Modal.Card.Title>
               <span className={styles.modalTitleWrapper}>
-                {page + 1} of {media.length}
-                <span>
-                  <Button
-                    aria-label="Go to previous"
-                    onClick={handlePreviousClick}
-                    size="small"
-                    className={styles.modalButton}
-                  >
-                    <span className="icon-arrow-circle-o-left" />
-                  </Button>
-                  <Button
-                    aria-label="Go to next"
-                    onClick={handleNextClick}
-                    size="small"
-                    className={styles.modalButton}
-                  >
-                    <span className="icon-arrow-circle-o-right" />
-                  </Button>
-                </span>
+                {media.length > 1 && (
+                  <>
+                    {page + 1} of {media.length}
+                    <span>
+                      <Button
+                        aria-label="Go to previous"
+                        onClick={handlePreviousClick}
+                        size="small"
+                        className={styles.modalButton}
+                      >
+                        <span className="icon-arrow-circle-o-left" />
+                      </Button>
+                      <Button
+                        aria-label="Go to next"
+                        onClick={handleNextClick}
+                        size="small"
+                        className={styles.modalButton}
+                      >
+                        <span className="icon-arrow-circle-o-right" />
+                      </Button>
+                    </span>
+                  </>
+                )}
               </span>
             </Modal.Card.Title>
           </Modal.Card.Header>

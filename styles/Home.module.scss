@@ -20,13 +20,18 @@
 
 .alternate {
   background: $tooltip-background;
-  padding: 0 1rem 2rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+  @include from(769px) {
+    padding: 0rem 1rem 2rem 1rem;
+  }
 }
 
 .column {
   @include until(768px) {
     margin-bottom: 2rem;
   }
+
+  margin: 1rem 0;
 
   > a {
     margin: 1rem 0.5rem 0 0;

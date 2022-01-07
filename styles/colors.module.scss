@@ -1,15 +1,16 @@
 // Set your brand colors
-$purple: #8A4D76;
-$pink: #FA7C91;
+$purple: #8a4d76;
+$pink: #fa7c91;
 $brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+$beige-medium: #bdbdbd;
 
 $green-dark: #283618;
-$green-light: #606C38;
-$cream: #FEFAE0;
-$sand-light: #DDA15E;
-$sand-dark: #BC6C25;
+$green-light: #606c38;
+$cream: #fefae0;
+$sand-light: #dda15e;
+$sand-dark: #bc6c25;
 
 // Update Bulma's global variables
 $family-serif: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
@@ -22,7 +23,7 @@ $grey-light: $beige-light;
 $primary: $green-light;
 $link: $sand-light;
 $background: $grey-dark;
-$text: $beige-light;
+$text: $beige-medium;
 $tabs-link-hover-color: $sand-light;
 $tabs-link-focus-color: $sand-light;
 $button-hover-color: $sand-light;
@@ -35,10 +36,10 @@ $input-background-color: $beige-lighter;
 $input-border-color: transparent;
 $input-shadow: none;
 
-$tooltip-background: #161616F2;
-$tooltip-border: #0000001A;
+$tooltip-background: #161616f2;
+$tooltip-border: #0000001a;
 
 $chip-hover-background: #00000033;
 
-$overlay-background: #161616F2;
-$overlay-border: #0000001A;
+$overlay-background: #161616f2;
+$overlay-border: #0000001a;

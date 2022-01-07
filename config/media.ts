@@ -7,7 +7,7 @@ export interface MediaProps {
   caption: string;
 }
 
-const START_PAGE_MEDIA = [
+const DEMO_MEDIA = [
   {
     type: "video",
     alt: "Demo: walk through",
@@ -44,8 +44,7 @@ const START_PAGE_MEDIA = [
     src: "./media/images/screen4.webp",
     width: "360",
     height: "270",
-    caption:
-      "List view of data centers that are marked as green",
+    caption: "List view of data centers that are marked as green",
   },
   {
     alt: "list view visited websites",
@@ -55,7 +54,7 @@ const START_PAGE_MEDIA = [
     caption: "List view of visited websites",
   },
   {
-    type: 'image',
+    type: "image",
     alt: "settings pop up",
     src: "./media/images/screen6.webp",
     width: "360",
@@ -65,4 +64,16 @@ const START_PAGE_MEDIA = [
   },
 ];
 
-export { START_PAGE_MEDIA };
+const DATA_CONSUMPTION_MEDIA = [
+  {
+    type: "image",
+    alt: "Development of website sizes",
+    src: "./media/images/timeseries-of-total-kilo.webp",
+    width: "360",
+    height: "240",
+    caption:
+      "http archive: The median size of a website grew constantly in the past 10 years",
+  },
+];
+
+export { DEMO_MEDIA, DATA_CONSUMPTION_MEDIA };

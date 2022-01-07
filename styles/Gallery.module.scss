@@ -21,13 +21,13 @@
   padding-bottom: 2rem;
   figure {
     text-align: center;
+    height: 100%;
     > figcaption {
       font-size: 0.7rem;
     }
     img {
+      max-height: 100%;
       width: auto;
-      height: 100%;
-      width: 100%;
       object-fit: contain;
       border: 2px solid $sand-light;
       &.highlight {
@@ -36,9 +36,8 @@
     }
     video {
       border: 2px solid $sand-light;
+      max-height: 100%;
       width: auto;
-      height: 100%;
-      width: 100%;
       object-fit: contain;
       &.highlight {
         cursor: zoom-in;
