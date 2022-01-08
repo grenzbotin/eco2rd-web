@@ -20,7 +20,7 @@
 
 .alternate {
   background: $tooltip-background;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem 1rem 3rem 1rem;
   @include from(769px) {
     padding: 0rem 1rem 2rem 1rem;
   }
@@ -40,4 +40,8 @@
 
 .middleAlign {
   align-self: center;
+}
+
+.centerAlign {
+  text-align: center;
 }

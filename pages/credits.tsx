@@ -97,9 +97,9 @@ const Credits: NextPage = () => {
           </p>
           <ul>
             {images.map((item) => (
-              <li key={item.alt} className={styles.li}>
+              <li key={item.alt} className={layout.li}>
                 <img src={item.src} alt={item.alt} width="25" height="25" />{" "}
-                <span className={styles.label}>
+                <span className={layout.label}>
                   from <a href={item.url}>{item.name}</a> on{" "}
                   <a href="https://www.flaticon.com">flaticon.com</a>
                 </span>

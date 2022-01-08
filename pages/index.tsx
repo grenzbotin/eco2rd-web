@@ -168,13 +168,115 @@ const Home: NextPage = () => {
                 different portions of energy sources (also known as the{" "}
                 <i>power mix</i>). This is the reason why the greenhouse gases
                 per kWh are varying, too: While only 130 gCO₂ are emitted in
-                Canada for 1 kWh, it&apos;s 449 gCO₂ in Mexico (numbers from
-                2018, via{" "}
+                Canada for generating 1 kWh, it&apos;s 449 gCO₂ in Mexico
+                (numbers from 2018, via{" "}
                 <a rel="noreferrer" href="https://www.climate-transparency.org">
                   climate-transparency.org
                 </a>
                 ).
               </p>
+              <p>
+                As you might notice - those differences makes a quite huge deal
+                in the actual footprint calculation. To have a more precise
+                measurement, you can select the country you are living in.
+              </p>
+            </Columns.Column>
+            <Columns.Column className={["is-full", styles.column].join(" ")}>
+              <h2>The role of data centers</h2>
+              <p>
+                Data centers play another key role in eco₂rd&apos;s
+                measurements. The extension is assuming that around 10% of
+                calculated energy is used on data center side for providing the
+                website to the consumer - the other 90% are used for data
+                transmission and data processing on the end user side.
+              </p>
+              <p>
+                Depending on whether the website you are requesting is listed as
+                a green energy center or not, this will have an influence on the
+                calculation of your digital footprint, too. eco₂rd is using the
+                official database of{" "}
+                <a
+                  rel="noreferrer"
+                  href="https://www.thegreenwebfoundation.org"
+                >
+                  TheGreenWebFoundation
+                </a>{" "}
+                to evaluate whether the data center that is hosting the website
+                you are visiting is certified as a <i>green</i> one. (This check
+                is done on the first visit of every website. Re-evaluations are
+                happening in intervals of 7 days after the previous check.)
+              </p>
+              <p>
+                If you pin eco₂rd to show up next to your address field in your
+                browser, you will notice a color change of the extension icon
+                from time to time. The icon indicates whether eco₂rd is aware of
+                the data center status. In total there are 3 different states:{" "}
+              </p>
+              <ul>
+                <li className={layout.li}>
+                  <img
+                    src={"/assets/datacenter_green.png"}
+                    alt={"eco₂rd icon with green color"}
+                    width="25"
+                    height="25"
+                  />{" "}
+                  <span className={layout.label}>
+                    the data center is certified as green energy center by GWF
+                  </span>
+                </li>
+                <li className={layout.li}>
+                  <img
+                    src={"/assets/datacenter_red.png"}
+                    alt={"eco₂rd icon with red color"}
+                    width="25"
+                    height="25"
+                  />{" "}
+                  <span className={layout.label}>
+                    the data center is not listed as green data center by GWF
+                  </span>
+                </li>
+                <li className={layout.li}>
+                  <img
+                    src={"/assets/datacenter_undefined.png"}
+                    alt={"eco₂rd icon with grey color"}
+                    width="25"
+                    height="25"
+                  />{" "}
+                  <span className={layout.label}>
+                    eco₂rd does not have information about the data center yet
+                  </span>
+                </li>
+              </ul>
+            </Columns.Column>
+            <Columns.Column
+              className={[
+                "is-full",
+                styles.column,
+                styles.alternate,
+                styles.centerAlign,
+              ].join(" ")}
+            >
+              <h2>
+                Install eco₂rd and start measuring your digital footprint!
+              </h2>
+              <Button
+                color="primary"
+                renderAs="a"
+                target="_blank"
+                rel="noreferrer"
+                href="https://chrome.google.com/webstore/detail/eco%E2%82%82rd/abgangmjmkjbpimkgnlbbhkellcekegj"
+              >
+                Download from chrome web store
+              </Button>
+              <Button
+                color="secondary"
+                renderAs="a"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/grenzbotin/eco2rd"
+              >
+                Github
+              </Button>
             </Columns.Column>
           </Columns>
         </Container>
