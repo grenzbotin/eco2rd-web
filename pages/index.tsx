@@ -24,9 +24,9 @@ const Home: NextPage = () => {
             >
               <h1>eco₂rd web browser extension</h1>
               <p>
-                This is <b>eco₂rd</b>, a browser extension for that aims to help
-                you measuring and understanding your digital, browser traffic
-                based CO₂ footprint while you are surfing through the internet.
+                This is <b>eco₂rd</b>, a browser extension that aims to help you
+                measuring and understanding your digital browser traffic based
+                CO₂ footprint while you are browsing the web.
               </p>
 
               <Button
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
             <Columns.Column
               className={["is-full", styles.column, styles.alternate].join(" ")}
             >
-              <h2>Why does it matter?</h2>
+              <h2>Website emissions? Why does it matter?</h2>
               <p>
                 While it is obvious that your machine - be it your phone, your
                 laptop or your TV - needs electrical energy to run and display
@@ -102,8 +102,79 @@ const Home: NextPage = () => {
                 beloved world.
               </p>
             </Columns.Column>
-            <Columns.Column size="half" className={styles.column}>
+            <Columns.Column
+              size="half"
+              className={[styles.column, styles.middleAlign].join(" ")}
+            >
               <Gallery media={DATA_CONSUMPTION_MEDIA} />
+            </Columns.Column>
+            <Columns.Column
+              className={["is-full", styles.column, styles.alternate].join(" ")}
+            >
+              <h2>Calculating your digital footprint with eco₂rd</h2>
+              <p>
+                In order to better understand how much energy and GHGs
+                (Greenhouse gases) are (approximately) used while using the web
+                browser, eco₂rd got developed as a currently 1-person-project.
+              </p>
+              <p>
+                The extension is leveraging the idea from the so-called 1byte
+                model that was described by{" "}
+                <a rel="noreferrer" href="https://theshiftproject.org/en/home/">
+                  &quot;The Shift Project&quot;
+                </a>{" "}
+                several years ago. The idea is simple: 1 byte transferred has an
+                equivalent of a specific amount of energy in{" "}
+                <i>Watts per hour (W/h)</i>.
+              </p>
+              <p>
+                Based on whether you want to be more accurate in your
+                measurement you have you have a few options to modify your
+                digital footprint calculation within the extension:
+              </p>
+
+              <h3>kWh-modifier</h3>
+              <p>
+                The kWh-modifier lets you decide on whether you want to take{" "}
+                <span
+                  className="has-tooltip-arrow has-tooltip-multiline"
+                  data-tooltip="If you are only interested in knowing how much energy is required to make data flow through a cable, you are good to go with narrow system boundaries."
+                >
+                  <i>narrow system boundaries</i>
+                </span>{" "}
+                or{" "}
+                <span
+                  className="has-tooltip-arrow has-tooltip-multiline"
+                  data-tooltip="If you rather want to have a clue on the bigger picture of emissions that is linked to your website consumption, you should opt-in for complete system boundaries."
+                >
+                  <i>complete system boundaries</i>
+                </span>{" "}
+                into account for your calculation. This option was introduced
+                due to the fact that estimates for internet energy consumption
+                differ quite widely based on which parts of the total system are
+                included in the analysis. More insights about this topic can be
+                found in this blogpost from wholegrain digital:{" "}
+                <a
+                  rel="noreferrer"
+                  href="https://www.wholegraindigital.com/blog/website-energy-consumption/"
+                >
+                  Why do estimates for internet energy consumption vary so
+                  drastically?
+                </a>
+              </p>
+              <h3>Region</h3>
+              <p>
+                Every country has its own electricty grid that consists of
+                different portions of energy sources (also known as the{" "}
+                <i>power mix</i>). This is the reason why the greenhouse gases
+                per kWh are varying, too: While only 130 gCO₂ are emitted in
+                Canada for 1 kWh, it&apos;s 449 gCO₂ in Mexico (numbers from
+                2018, via{" "}
+                <a rel="noreferrer" href="https://www.climate-transparency.org">
+                  climate-transparency.org
+                </a>
+                ).
+              </p>
             </Columns.Column>
           </Columns>
         </Container>
