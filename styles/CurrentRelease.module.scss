@@ -1,0 +1,19 @@
+@import "./colors.module.scss";
+
+.current_release {
+  padding: 0.5rem;
+  background-color: $tooltip-background;
+  position: absolute;
+  right: 0;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.release_button {
+  margin-left: 0.5rem;
+}
+
+.release_button_icon {
+  margin-right: 0.5rem;
+}

@@ -18,6 +18,25 @@ function ExtensionNews(): React.ReactElement {
               {item.date.toLocaleDateString()}
             </time>
             <p>{item.content}</p>
+            {item.link && (
+              <Button
+                size="small"
+                color="secondary"
+                renderAs="a"
+                target="_blank"
+                rel="noreferrer"
+                href={item.link}
+                className={styles.release_button}
+              >
+                <span
+                  className={[
+                    styles.release_button_icon,
+                    "icon-arrow-circle-o-right",
+                  ].join(" ")}
+                />
+                Release notes {item.version}
+              </Button>
+            )}
           </article>
         ))}
         {NEWS_SHOWN < EXTENSION_STATUS.length && (

@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import { Button, Columns, Container } from "react-bulma-components";
+import CurrentRelease from "../components/CurrentRelease";
 
 import Gallery from "../components/Gallery";
 import { DATA_CONSUMPTION_MEDIA, DEMO_MEDIA } from "../config/media";
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         description="eco₂rd browser extension helps you understanding your digital footprint with measuring your browser traffic based data and engery consumption."
       />
       <main className={layout.main}>
+        <CurrentRelease />
         <Container className={styles.container}>
           <Columns className="is-8">
             <Columns.Column
