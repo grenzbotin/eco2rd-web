@@ -61,8 +61,8 @@ const Home: NextPage = () => {
               <p>
                 While it is obvious that your machine - be it your phone, your
                 laptop or your TV - needs electrical energy to run and display
-                content on its screen, other energy consumers that are linked to
-                the same goal might be less natural to think about:
+                website content on its screen, other energy consumers that are
+                linked to the same goal might be less natural to think about:
               </p>
               <p>
                 For example the energy that is needed to let your browser render
@@ -88,7 +88,8 @@ const Home: NextPage = () => {
                 , the trend in websites getting larger and larger does not seem
                 to slow down. While in 2012 a median desktop sized web page had
                 a size of 660 kB, todays websites come across with around 2.2 MB
-                of data on average.
+                of data on average. (Side note: the world first websites were
+                around 4 kB in size.)
               </p>
               <p>
                 Websites that are consumed via mobile even grew more than 500%,
@@ -97,9 +98,9 @@ const Home: NextPage = () => {
               <p>
                 Coming back to our web based energy consumption: Sadly, the
                 internet is no energy-eldorado. Every byte, every bit costs
-                energy - and this energy comes from our states` grid systems
-                with all their site effects and carbon emissions heating up our
-                beloved world.
+                energy - and this energy comes from our states&apos; grid
+                systems with all their side effects and carbon emissions heating
+                up our beloved world.
               </p>
             </Columns.Column>
             <Columns.Column
@@ -129,8 +130,8 @@ const Home: NextPage = () => {
               </p>
               <p>
                 Based on whether you want to be more accurate in your
-                measurement you have you have a few options to modify your
-                digital footprint calculation within the extension:
+                measurement you have a few options to modify your digital
+                footprint calculation within the extension:
               </p>
 
               <h3>kWh-modifier</h3>
@@ -176,9 +177,9 @@ const Home: NextPage = () => {
                 ).
               </p>
               <p>
-                As you might notice - those differences makes a quite huge deal
+                As you might notice - those differences make a quite huge deal
                 in the actual footprint calculation. To have a more precise
-                measurement, you can select the country you are living in.
+                measurement you can select the country you are located in.
               </p>
             </Columns.Column>
             <Columns.Column className={["is-full", styles.column].join(" ")}>
@@ -187,8 +188,8 @@ const Home: NextPage = () => {
                 Data centers play another key role in eco₂rd&apos;s
                 measurements. The extension is assuming that around 10% of
                 calculated energy is used on data center side for providing the
-                website to the consumer - the other 90% are used for data
-                transmission and data processing on the end user side.
+                website data - the other 90% are used for data transmission to
+                the user and data processing on the end user side.
               </p>
               <p>
                 Depending on whether the website you are requesting is listed as
