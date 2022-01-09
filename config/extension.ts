@@ -1,7 +1,7 @@
 const EXTENSION_STATUS = [
   {
     id: 5,
-    date: new Date(2021, 1, 8),
+    date: new Date(2021, 0, 8),
     title: "🌎 v0.1.3 - Power mix country update",
     content:
       "Power mix information for existing countries got updated; new power mix data got added for following countries: Argentina, Australia, Brazil, Canada, China, UK, India, Indonesia, Japan, Mexico, Russia, Saudi Arabia, South Africa, South Korea and Turkey.",
