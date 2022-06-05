@@ -77,6 +77,7 @@ function Gallery({ media }: { media: MediaProps[] }): React.ReactElement {
           <video
             className={styles.highlight}
             poster="/media/images/demo_poster.webp"
+            preload="none"
           >
             <source src={media[0].src} type="video/mp4" />
           </video>

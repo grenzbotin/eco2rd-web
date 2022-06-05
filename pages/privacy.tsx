@@ -17,12 +17,14 @@ const Privacy: NextPage = () => {
       <main className={layout.main}>
         <Container className={styles.container}>
           <h1>Privacy</h1>
-          <h2>eco₂rd extension</h2>
+          <h2>
+            eco<sub>2</sub>rd extension
+          </h2>
           <p>
-            When using the extension eco₂rd, none of your data are collected and
-            sent a any other instance in any way by the extension: all browsing
-            data and information are analyzed and processed directly on your
-            device.
+            When using the extension eco<sub>2</sub>rd, none of your data are
+            collected and sent a any other instance in any way by the extension:
+            all browsing data and information are analyzed and processed
+            directly on your device.
           </p>
           <p>
             The source code of the extension is available in open access, to
@@ -37,13 +39,15 @@ const Privacy: NextPage = () => {
             .
           </p>
           <p>
-            eco₂rd got concepted, developed and designed by{" "}
+            eco<sub>2</sub>rd got concepted, developed and designed by{" "}
             <a target="_blank" rel="noreferrer" href="https://www.vulpis.dev">
               Franziska Fieke
             </a>
             .
           </p>
-          <h2>eco₂rd website: ecord.info</h2>
+          <h2>
+            eco<sub>2</sub>rd website: ecord.info
+          </h2>
           <p>
             The following data protection declaration applies for the usage of
             the website and related services with the domain ecord.info. By

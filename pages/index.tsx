@@ -24,11 +24,17 @@ const Home: NextPage = () => {
               size="half"
               className={[styles.column, styles.hero].join(" ")}
             >
-              <h1>eco₂rd web browser extension</h1>
+              <h1>
+                eco<sub>2</sub>rd web browser extension
+              </h1>
               <p>
-                This is <b>eco₂rd</b>, a browser extension that aims to help you
-                measuring and understanding your digital browser traffic based
-                CO₂ footprint while you are browsing the web.
+                This is{" "}
+                <b>
+                  eco<sub>2</sub>rd
+                </b>
+                , a browser extension that aims to help you measuring and
+                understanding your digital browser traffic based CO₂ footprint
+                while you are browsing the web.
               </p>
 
               <Button
@@ -114,11 +120,14 @@ const Home: NextPage = () => {
             <Columns.Column
               className={["is-full", styles.column, styles.alternate].join(" ")}
             >
-              <h2>Calculating your digital footprint with eco₂rd</h2>
+              <h2>
+                Calculating your digital footprint with eco<sub>₂</sub>rd
+              </h2>
               <p>
                 In order to better understand how much energy and GHGs
                 (Greenhouse gases) are (approximately) used while using the web
-                browser, eco₂rd got developed as a currently 1-person-project.
+                browser, eco<sub>2</sub>rd got developed as a currently
+                1-person-project.
               </p>
               <p>
                 The extension is leveraging the idea from the so-called 1byte
@@ -187,7 +196,7 @@ const Home: NextPage = () => {
             <Columns.Column className={["is-full", styles.column].join(" ")}>
               <h2>The role of data centers</h2>
               <p>
-                Data centers play another key role in eco₂rd&apos;s
+                Data centers play another key role in eco<sub>2</sub>rd&apos;s
                 measurements. The extension is assuming that around 10% of
                 calculated energy is used on data center side for providing the
                 website data - the other 90% are used for data transmission to
@@ -196,8 +205,8 @@ const Home: NextPage = () => {
               <p>
                 Depending on whether the website you are requesting is listed as
                 a green energy center or not, this will have an influence on the
-                calculation of your digital footprint, too. eco₂rd is using the
-                official database of{" "}
+                calculation of your digital footprint, too. eco<sub>2</sub>rd is
+                using the official database of{" "}
                 <a
                   rel="noreferrer"
                   href="https://www.thegreenwebfoundation.org"
@@ -210,10 +219,11 @@ const Home: NextPage = () => {
                 happening in intervals of 7 days after the previous check.)
               </p>
               <p>
-                If you pin eco₂rd to show up next to your address field in your
-                browser, you will notice a color change of the extension icon
-                from time to time. The icon indicates whether eco₂rd is aware of
-                the data center status. In total there are 3 different states:{" "}
+                If you pin eco<sub>2</sub>rd to show up next to your address
+                field in your browser, you will notice a color change of the
+                extension icon from time to time. The icon indicates whether eco
+                <sub>2</sub>rd is aware of the data center status. In total
+                there are 3 different states:{" "}
               </p>
               <ul>
                 <li className={layout.li}>
@@ -246,7 +256,8 @@ const Home: NextPage = () => {
                     height="25"
                   />{" "}
                   <span className={layout.label}>
-                    eco₂rd does not have information about the data center yet
+                    eco<sub>2</sub>rd does not have information about the data
+                    center yet
                   </span>
                 </li>
               </ul>
@@ -260,7 +271,8 @@ const Home: NextPage = () => {
               ].join(" ")}
             >
               <h2>
-                Install eco₂rd and start measuring your digital footprint!
+                Install eco<sub>2</sub>rd and start measuring your digital
+                footprint!
               </h2>
               <Button
                 color="primary"

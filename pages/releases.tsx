@@ -15,7 +15,9 @@ const Releases: NextPage = () => {
       />
       <main className={layout.main}>
         <Container className={styles.container}>
-          <h1>eco₂rd Releases</h1>
+          <h1>
+            eco<sub>2</sub>rd Releases
+          </h1>
           <p>
             The browser extension is in a stable condition with a lot of
             potential for improvements like localisation, more data and
