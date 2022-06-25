@@ -1,5 +1,13 @@
 const EXTENSION_STATUS = [
   {
+    id: 6,
+    date: new Date(2022, 5, 25),
+    title: "🏛 v0.1.4 - Historical data view update",
+    link: "https://github.com/grenzbotin/eco2rd/releases/tag/v0.1.4",
+    version: "v0.1.4",
+    content: "Historical data can now be found in the 'historical' tab that allows to compare data transfer, co2eq and electricity usage over months and years. Note: Historical data is only available with the new update.",
+  },
+  {
     id: 5,
     date: new Date(2022, 0, 8),
     title: "🌎 v0.1.3 - Power mix country update",

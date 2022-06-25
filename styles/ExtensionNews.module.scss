@@ -1,7 +1,16 @@
+@import "./colors.module.scss";
+
 .news {
   padding-right: 2rem;
   > div > article {
-    margin-bottom: 1.2rem;
+    > h2 {
+      margin-top: 0rem,
+    }
+    margin: 1.2rem 0;
+    padding: 2rem;
+    &:nth-child(odd) {
+      background: $tooltip-background;;
+    }
     > time {
       font-size: 0.8rem;
     }

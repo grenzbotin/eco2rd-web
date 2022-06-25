@@ -25,7 +25,7 @@ const DEMO_MEDIA = [
   },
   {
     alt: "detail view of a website in the extension",
-    src: "./media/images/screen2.webp",
+    src: "./media/images/screen3.webp",
     width: "360",
     height: "270",
     caption:
@@ -33,34 +33,29 @@ const DEMO_MEDIA = [
   },
   {
     alt: "detail on download chip click",
-    src: "./media/images/screen3.webp",
+    src: "./media/images/screen2.webp",
     width: "360",
     height: "270",
     caption:
       "Detail view of consumed electricity: How many times could a phone have been charged?",
   },
   {
-    alt: "list view data centers",
-    src: "./media/images/screen4.webp",
-    width: "360",
-    height: "270",
-    caption: "List view of data centers that are marked as green",
-  },
-  {
-    alt: "list view visited websites",
-    src: "./media/images/screen5.webp",
-    width: "360",
-    height: "270",
-    caption: "List view of visited websites",
-  },
-  {
     type: "image",
     alt: "settings pop up",
-    src: "./media/images/screen6.webp",
+    src: "./media/images/screen4.webp",
     width: "360",
     height: "270",
     caption:
       "In the settings you can select your country and which kWh modifier you prefer.",
+  },
+  {
+    type: "image",
+    alt: "historical data",
+    src: "./media/images/screen5.webp",
+    width: "360",
+    height: "270",
+    caption:
+      "Compare your co2eq, data transfer and electricity usage over months and years.",
   },
 ];
 

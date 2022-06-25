@@ -16,8 +16,8 @@ const Home: NextPage = () => {
         title="eco₂rd - Browser extension"
         description="eco₂rd browser extension helps you understanding your digital footprint with measuring your browser traffic based data and engery consumption."
       />
+      <CurrentRelease />
       <main className={layout.main}>
-        <CurrentRelease />
         <Container className={styles.container}>
           <Columns className="is-8">
             <Columns.Column

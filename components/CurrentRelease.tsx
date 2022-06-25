@@ -1,4 +1,3 @@
-import { link } from "fs";
 import { Button } from "react-bulma-components";
 import { EXTENSION_STATUS } from "../config/extension";
 import styles from "../styles/CurrentRelease.module.scss";
