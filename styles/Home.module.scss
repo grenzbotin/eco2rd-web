@@ -13,8 +13,8 @@
   @include from(769px) {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 52px -  46px - 1.5rem - 1rem);
     justify-content: center;
-    height: calc(100vh - 72px);
   }
 }
 
@@ -29,6 +29,10 @@
 .column {
   @include until(768px) {
     margin-bottom: 2rem;
+  }
+
+  @include from(769px) {
+    padding: 1.5rem;
   }
 
   margin: 1rem 0;
