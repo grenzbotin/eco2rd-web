@@ -1,5 +1,13 @@
 const EXTENSION_STATUS = [
   {
+    id: 7,
+    date: new Date(2022, 5, 27),
+    title: "🌎 v0.1.5 - Power Mix Update",
+    link: "https://github.com/grenzbotin/eco2rd/releases/tag/v0.1.5",
+    version: "v0.1.5",
+    content: "The power mix information (gCO2/kWh) for a lot of countries got updated to numbers from 2020.",
+  },
+  {
     id: 6,
     date: new Date(2022, 5, 25),
     title: "🏛 v0.1.4 - Historical data",

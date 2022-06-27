@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="eco₂rd - Browser extension"
+        title="eco₂rd - Record your browser based CO2 emissions"
         description="eco₂rd browser extension helps you understanding your digital footprint with measuring your browser traffic based data and engery consumption."
       />
       <CurrentRelease />
